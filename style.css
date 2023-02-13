@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  background-image: url(./Analogue_clock_face.svg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.akrep {
+  border: 2px solid rgb(25, 25, 25);
+  background-color: black;
+  border-radius: 4rem;
+  width: 1rem;
+  height: 8rem;
+  position: absolute;
+  bottom: 50%;
+
+  transform-origin: bottom;
+  transform: rotate(30deg);
+}
+.yelkovan {
+  border: 2px solid rgb(25, 25, 25);
+  background-color: rgb(29, 27, 27);
+  border-radius: 4rem;
+  width: 0.6rem;
+  height: 11rem;
+  position: absolute;
+  bottom: 50%;
+  transform-origin: bottom;
+  transform: rotate(0deg);
+}
+.saniye {
+  background-color: rgb(253, 8, 8);
+  border-radius: 4rem;
+  width: 0.5rem;
+  height: 14rem;
+  position: absolute;
+  bottom: 50%;
+  transform-origin: bottom;
+  transform: rotate(90deg);
+}
+
+.box::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgb(253, 8, 8);
+  position: sticky;
+  bottom: 48%;
+  left: 48.6%;
+  border-radius: 50%;
+  z-index: 5;
+}
